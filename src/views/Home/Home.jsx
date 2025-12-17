@@ -1,0 +1,19 @@
+import React from 'react'
+import './Home.css'
+
+const students= [
+  { name: 'Alice', email: 'alice@gmail.com', age: 21 },
+  { name: 'Bob', email: 'bob@gmail.com', age: 22 },
+  { name: 'Charlie', email: 'charlie@gmail.com', age: 23 },
+  { name: 'David', email: 'david@gmail.com', age: 24 },
+]
+
+function Home() {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default Home
