@@ -12,6 +12,10 @@ function Home() {
   return (
     <div>
       <h1>Student List</h1>
+
+      {students.map((StudObj) => {
+        return <h2>{StudObj}</h2>
+      })}
     </div>
   )
 }
