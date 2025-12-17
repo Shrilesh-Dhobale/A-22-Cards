@@ -9,10 +9,11 @@ const students= [
 ]
 
 function Home() {
+  
   return (
     <div>
       <h1>Student List</h1>
-
+      <div className="home-container">
       {students.map((StudObj) => {
         return(
         <div className='student-card'>
@@ -22,6 +23,7 @@ function Home() {
         </div>
 ) 
       })}
+        </div>
     </div>
   )
 }

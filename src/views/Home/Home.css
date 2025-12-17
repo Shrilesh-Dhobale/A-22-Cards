@@ -6,7 +6,14 @@
     box-shadow:2px 2px 12px rgba(0,0,0,0.1);
 }
 .student-name{
-    font-size:1.2em;
+    font-size:15px;
     font-weight:bold;
+    margin:0;
+    margin-bottom:5px;
+}
+.student-info{
+    font-size:13px;
+    color:#555;
+    margin:0;
     margin-bottom:5px;
 }
