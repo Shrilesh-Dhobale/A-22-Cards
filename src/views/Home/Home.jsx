@@ -15,10 +15,10 @@ function Home() {
 
       {students.map((StudObj) => {
         return(
-        <div>
-            <h2>Name: {StudObj.name}</h2>
-            <p>Email: {StudObj.email}</p>
-            <p>Age: {StudObj.age}</p>
+        <div className='student-card'>
+            <h2 className='student-name'>Name: {StudObj.name}</h2>
+            <p className='student-info'>Email: {StudObj.email}</p>
+            <p className='student-info'>Age: {StudObj.age}</p>
         </div>
 ) 
       })}
