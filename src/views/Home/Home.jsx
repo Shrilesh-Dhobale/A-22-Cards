@@ -16,9 +16,9 @@ function Home() {
       {students.map((StudObj) => {
         return(
         <div className='student-card'>
-            <h2 className='student-name'>Name: {StudObj.name}</h2>
-            <p className='student-info'>Email: {StudObj.email}</p>
-            <p className='student-info'>Age: {StudObj.age}</p>
+            <h2 className='student-name'>{StudObj.name}</h2>
+            <p className='student-info'>{StudObj.email}</p>
+            <p className='student-info'>{StudObj.age}</p>
         </div>
 ) 
       })}
