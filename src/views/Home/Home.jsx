@@ -11,7 +11,7 @@ const students= [
 function Home() {
   return (
     <div>
-      
+      <h1>Student List</h1>
     </div>
   )
 }
