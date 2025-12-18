@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+import {Building2} from 'lucide-react'
 
 const students= [
   { name: 'Alice', email: 'alice@gmail.com', age: 21 },
@@ -19,7 +20,8 @@ function Home() {
         <div className='student-card'>
             <h2 className='student-name'>{StudObj.name}</h2>
             <p className='student-info'>{StudObj.email}</p>
-            <p className='student-info'>{StudObj.age}</p>
+            <p className='student-info'>
+              <Building2/>{StudObj.age}</p>
         </div>
 ) 
       })}
