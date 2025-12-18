@@ -1,12 +1,15 @@
 import React from 'react'
 import './Home.css'
-import {Building2} from 'lucide-react'
+import {Building2,Mail} from 'lucide-react'
 
 const students= [
-  { name: 'Alice', email: 'alice@gmail.com', age: 21 },
-  { name: 'Bob', email: 'bob@gmail.com', age: 22 },
-  { name: 'Charlie', email: 'charlie@gmail.com', age: 23 },
-  { name: 'David', email: 'david@gmail.com', age: 24 },
+  { name: 'Alice', email: 'alice@gmail.com', city: "Washington" },
+  { name: 'Bob', email: 'bob@gmail.com', city: "New York" },
+  { name: 'Charlie', email: 'charlie@gmail.com', city: "Los Angeles" },
+  { name: 'David', email: 'david@gmail.com', city: "Chicago" },
+  { name: 'Eve', email: 'eve@gmail.com', city: "Houston" },
+  { name: 'Frank', email: 'frank@gmail.com', city: "Phoenix" },
+  { name: 'Grace', email: 'grace@gmail.com', city: "Philadelphia" },
 ]
 
 function Home() {
@@ -19,9 +22,10 @@ function Home() {
         return(
         <div className='student-card'>
             <h2 className='student-name'>{StudObj.name}</h2>
-            <p className='student-info'>{StudObj.email}</p>
             <p className='student-info'>
-              <Building2/>{StudObj.age}</p>
+              <Mail className='student-info-icon'/>{StudObj.email}</p>
+            <p className='student-info'>
+              <Building2 className='student-info-icon'/>{StudObj.city}</p>
         </div>
 ) 
       })}

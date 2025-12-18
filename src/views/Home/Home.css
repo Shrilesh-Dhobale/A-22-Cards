@@ -24,3 +24,9 @@
     margin:0;
     margin-bottom:5px;
 }
+.student-info-icon{
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 14px;
+    height: 14px;
+}
