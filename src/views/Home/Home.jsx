@@ -1,7 +1,9 @@
 import React from 'react'
 import './Home.css'
-import {Building2,Mail} from 'lucide-react'
+import {Building2,Mail, Mars} from 'lucide-react'
 import { students } from '../../config/student'
+import Boy from './boy.png'
+import Girl from './woman.png'
 
 
 
@@ -23,8 +25,10 @@ function Home() {
               <Mail className='student-info-icon'/>{email}</p>
             <p className='student-info'>
               <Building2 className='student-info-icon'/>{city}</p>
-              <p className='student-info'>
-              <Building2 className='student-info-icon'/>{gender}</p>
+            <img
+            src={gender==="Male"?Boy:Girl}
+            className='student-gender'/>
+            
             
         </div>
 ) 
