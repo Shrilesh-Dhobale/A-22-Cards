@@ -1,16 +1,9 @@
 import React from 'react'
 import './Home.css'
 import {Building2,Mail} from 'lucide-react'
+import { students } from '../../config/student'
 
-const students= [
-  { name: 'Alice', email: 'alice@gmail.com', city: "Washington" },
-  { name: 'Bob', email: 'bob@gmail.com', city: "New York" },
-  { name: 'Charlie', email: 'charlie@gmail.com', city: "Los Angeles" },
-  { name: 'David', email: 'david@gmail.com', city: "Chicago" },
-  { name: 'Eve', email: 'eve@gmail.com', city: "Houston" },
-  { name: 'Frank', email: 'frank@gmail.com', city: "Phoenix" },
-  { name: 'Grace', email: 'grace@gmail.com', city: "Philadelphia" },
-]
+
 
 function Home() {
   
