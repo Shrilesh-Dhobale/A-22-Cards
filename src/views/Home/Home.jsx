@@ -19,6 +19,9 @@ function Home() {
               <Mail className='student-info-icon'/>{StudObj.email}</p>
             <p className='student-info'>
               <Building2 className='student-info-icon'/>{StudObj.city}</p>
+              <p className='student-info'>
+              <Building2 className='student-info-icon'/>{StudObj.gender}</p>
+            
         </div>
 ) 
       })}
