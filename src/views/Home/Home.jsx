@@ -9,7 +9,7 @@ import { App_Name, App_Description, Secondary_Color, Primary_Color, Light_Color,
 function Home() {
   
     return (
-      <div style={{backgroundColor:BG_Color}} >
+      <div style={{backgroundColor:BG_Color,height:"100vh"}} >
         <h1 className='App_Name' style={{color:Primary_Color}}>{App_Name}</h1>
         <p className='App_Description'style={{color:Secondary_Color}}>{App_Description}</p>
 
@@ -30,8 +30,4 @@ function Home() {
     );
   }
   
-
-  
-    
-
 export default Home

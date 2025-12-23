@@ -4,11 +4,13 @@
     font-size: 24px;
     text-align: center;
     margin:0;
-    
+    padding:20px;
+
 }
 .App_Description{
     font-size: 16px;
     color: #666;
     margin-bottom: 20px;
     text-align: center;
+    margin-top:5px;
 }

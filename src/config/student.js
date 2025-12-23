@@ -20,9 +20,21 @@ const students = [
     city: "Chicago",
     gender:"Male"
    },
-  { name: 'Eve', email: 'eve@gmail.com', city: "Houston",gender:"Female" },
-  { name: 'Frank', email: 'frank@gmail.com', city: "Phoenix",gender:"Male" },
-  { name: 'Grace', email: 'grace@gmail.com', city: "Philadelphia",gender:"Female" },
+  { name: 'Eve', 
+    email: 'eve@gmail.com', 
+    city: "Houston",
+    gender:"Female" 
+  },
+  { name: 'Frank', 
+    email: 'frank@gmail.com', 
+    city: "Phoenix",
+    gender:"Male" 
+  },
+  { name: 'Grace', 
+    email: 'grace@gmail.com', 
+    city: "Philadelphia",
+    gender:"Female" 
+  },
 ];
 
 export { students };
