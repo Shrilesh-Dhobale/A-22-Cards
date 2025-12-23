@@ -1,41 +1,34 @@
 import React from 'react'
 import './Home.css'
-import {Building2,Mail, Mars} from 'lucide-react'
+import StudCard from '../../components/Studcard/StudCard.jsx'
 import { students } from '../../config/student'
-import Boy from './boy.png'
-import Girl from './woman.png'
-
 
 
 function Home() {
   
-  return (
-    <div>
-      <h1>Student List</h1>
-      <div className="home-container">
-      {students.map((StudObj) => {
-         const { name, email, city, gender } = StudObj;
+    return (
+      <div>
+        <h1>Students</h1>
 
-        return(
-
-
-        <div className='student-card'>
-            <h2 className='student-name'>{name}</h2>
-            <p className='student-info'>
-              <Mail className='student-info-icon'/>{email}</p>
-            <p className='student-info'>
-              <Building2 className='student-info-icon'/>{city}</p>
-            <img
-            src={gender==="Male"?Boy:Girl}
-            className='student-gender'/>
-            
-            
+        <div className='home-container'>
+          {students.map((student)=>{
+            const {name, email, city, gender, avatar} = student;
+            return (<StudCard
+              key={email}
+              name={name}
+              email={email}
+              city={city}
+              gender={gender}
+              />
+            );
+          })}
         </div>
-) 
-      })}
-        </div>
-    </div>
-  )
-}
+      </div>
+    );
+  }
+  
+
+  
+    
 
 export default Home
