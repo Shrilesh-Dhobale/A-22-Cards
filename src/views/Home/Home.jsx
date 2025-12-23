@@ -2,14 +2,14 @@ import React from 'react'
 import './Home.css'
 import StudCard from '../../components/Studcard/StudCard.jsx'
 import { students } from '../../config/student'
-import { App_Name, App_Description, Secondary_Color, Primary_Color } from '../../config/app.js'
+import { App_Name, App_Description, Secondary_Color, Primary_Color, Light_Color, BG_Color } from '../../config/app.js'
 
 
 
 function Home() {
   
     return (
-      <div>
+      <div style={{backgroundColor:BG_Color}} >
         <h1 className='App_Name' style={{color:Primary_Color}}>{App_Name}</h1>
         <p className='App_Description'style={{color:Secondary_Color}}>{App_Description}</p>
 
